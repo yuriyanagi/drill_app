@@ -1,2 +1,5 @@
 %h1 トップページ
-%p hello world
+- @posts.each do |post|
+  %div
+    =post.memo
+    =post.created_at
